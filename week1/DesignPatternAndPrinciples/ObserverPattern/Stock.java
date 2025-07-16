@@ -1,0 +1,7 @@
+package week1.DesignPatternAndPrinciples.ObserverPattern;
+
+public interface Stock {
+    void registerObserver(Observer observer);
+    void deregisterObserver(Observer observer);
+    void notifyObservers();
+}
