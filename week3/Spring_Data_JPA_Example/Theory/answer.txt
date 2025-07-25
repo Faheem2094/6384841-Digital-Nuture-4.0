@@ -1,0 +1,26 @@
+JPA (Java Persistence API)
+--------------------------
+- JPA is a specification (a set of rules), not an implementation.
+- It defines how Java objects map to relational database tables.
+- Provides annotations like @Entity, @Id, @OneToMany, etc.
+- To use JPA, you need a JPA provider (e.g., Hibernate).
+
+Hibernate
+---------
+- Hibernate is a popular JPA provider (implementation of the JPA specification).
+- It handles the actual database operations for JPA-annotated classes.
+- You can use Hibernate directly without JPA; it offers extra features.
+- In most Spring applications, Hibernate is used as the default JPA provider.
+
+Spring Data JPA
+---------------
+- Spring Data JPA is a Spring-based framework built on top of JPA.
+- It simplifies database access by reducing boilerplate code.
+- Instead of writing full repository implementations, just create an interface:
+  
+  public interface UserRepository extends JpaRepository<User, Long> {
+      List<User> findByLastName(String lastName);
+  }
+
+- Spring automatically generates the implementation at runtime.
+- It integrates seamlessly with Spring Boot, providing auto-configuration and easy setup.
