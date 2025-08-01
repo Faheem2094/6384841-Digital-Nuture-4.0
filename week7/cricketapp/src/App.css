@@ -1,0 +1,11 @@
+.App {
+  text-align: left;
+  padding: 20px;
+}
+li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+hr {
+  margin: 20px 0;
+}

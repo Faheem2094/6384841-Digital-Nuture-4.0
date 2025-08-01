@@ -1,0 +1,36 @@
+.app-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.controls button {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  text-align: left;
+}
+
+.section {
+  width: 30%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.section:not(:first-child) {
+  border-left: 2px solid green;
+}
+
+.section h2, .section h3 {
+  text-align: center;
+}
+
+hr {
+  margin: 30px 0;
+}
